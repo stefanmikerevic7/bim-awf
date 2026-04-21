@@ -159,6 +159,7 @@
 
   /* CARD */
   .awf-card {
+    cursor: pointer;
     background: white;
     border: 0.5px solid #E0DDD6;
     border-radius: 10px;
@@ -238,6 +239,17 @@
   }
 
   .awf-card.hidden { display: none; }
+  .awf-card[data-link]:hover::after {
+    content: "→ Zur Seite";
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #1A5FA0;
+    letter-spacing: 0.03em;
+  }
+  .awf-card[data-link] { padding-bottom: 2rem; }
 </style>
 </head>
 <body>
@@ -269,7 +281,7 @@
       <h2>Grundlagen &amp; Rahmenwerk</h2>
     </div>
     <div class="awf-grid">
-      <div class="awf-card phase-g" data-phase="g">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/000-Grunds%C3%A4tzliches.aspx" onclick="window.location.href=this.dataset.link" phase-g" data-phase="g">
         <div class="awf-header"><span class="awf-num num-g">AWF 000</span><h3 class="awf-title">Grundsätzliches</h3></div>
         <p class="awf-desc">Übergreifende Anwendungsfälle, die die Grundlagen für den Einsatz und die Beauftragung weiterer Anwendungsfälle bilden – z.&thinsp;B. AIA, BAP und Projektbesprechungen.</p>
         <span class="awf-tag">Rahmenwerk &amp; Organisation</span>
@@ -285,67 +297,67 @@
     </div>
     <div class="awf-grid">
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/010%20Bestandserfassung%20und%20-modellierung.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 010</span><h3 class="awf-title">Bestandserfassung und -modellierung</h3></div>
         <p class="awf-desc">Erfassung der wesentlichen Aspekte des Bestandes durch ein geeignetes Aufmaß und Überführung in ein Bestandsmodell.</p>
         <span class="awf-tag">Bestandsaufnahme</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/020%20Bedarfsplanung.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 020</span><h3 class="awf-title">Bedarfsplanung</h3></div>
         <p class="awf-desc">Erstellen eines generischen Bedarfsmodells bzw. einer digitalisierten Bedarfsplanung (Raumbedarfsplan), z.&thinsp;B. digitales Raumbuch und Beschaffungsvariantenuntersuchung.</p>
         <span class="awf-tag">Bedarfsermittlung</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/030%20Planungsvarianten-Haushaltsbegr%C3%BCndende%20Unterlagen.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 030</span><h3 class="awf-title">Planungsvarianten / Haushaltsbegründende Unterlagen</h3></div>
         <p class="awf-desc">Erstellung von Planungsvarianten als BIM-Modell zur Analyse und Bewertung hinsichtlich Kosten, Terminen und baulich-konstruktiver Gestaltung.</p>
         <span class="awf-tag">Variantenvergleich</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/040%20Visualisierung.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 040</span><h3 class="awf-title">Visualisierung</h3></div>
         <p class="awf-desc">Bedarfsgerechte Visualisierung auf Basis der BIM-Modelle – ergänzt durch weitere Objekte und Informationen für Projektkommunikation oder Öffentlichkeitsarbeit.</p>
         <span class="awf-tag">3D-Darstellung &amp; Kommunikation</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/050%20Koordination%20der%20Fachgewerke.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 050</span><h3 class="awf-title">Koordination der Fachgewerke</h3></div>
         <p class="awf-desc">Regelmäßiges Zusammenführen der Fachmodelle in einem Koordinationsmodell mit automatisierter Kollisionsprüfung, Konfliktbehebung und Qualitätskontrolle.</p>
         <span class="awf-tag">Kollisionsprüfung &amp; Modellkoordination</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/060%20Planungsfortschrittskontrolle%20und%20Qualit%C3%A4tspr%C3%BCfung.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 060</span><h3 class="awf-title">Planungsfortschrittskontrolle und Qualitätsprüfung</h3></div>
         <p class="awf-desc">Nutzung des Modells für die Planungsfortschrittskontrolle als Grundlage des Controllings sowie Qualitätsprüfung und Planungsfreigabe durch den Auftraggeber.</p>
         <span class="awf-tag">Qualitätssicherung</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/070%20Bemessung%20und%20Nachweisf%C3%BChrung.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 070</span><h3 class="awf-title">Bemessung und Nachweisführung</h3></div>
         <p class="awf-desc">Nutzung des Modells für Bemessung und Nachweisführung, einschließlich Simulationen wie Überflutung, Lärm- und Schadstoffausbreitung. Deckt rechnerische, terminliche und sicherheitsrelevante Aspekte ab.</p>
         <span class="awf-tag">Simulation &amp; Nachweis</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/080%20Ableitung%20von%20Planunterlagen.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 080</span><h3 class="awf-title">Ableitung von Planunterlagen</h3></div>
         <p class="awf-desc">Ableitung relevanter Teile der Planung aus dem Bauwerksdatenmodell und Überführung in 2D-Planformate gemäß geltenden Richtlinien und Regelwerken.</p>
         <span class="awf-tag">2D-Planableitung</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/090%20Genehmigungsprozess.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 090</span><h3 class="awf-title">Genehmigungsprozess</h3></div>
         <p class="awf-desc">Durchführung der Prüfläufe zur behördlichen Freigabe der Planung auf Basis von BIM-Modellen und daraus abgeleiteten Unterlagen unter Beachtung regulativer Vorgaben.</p>
         <span class="awf-tag">Behördliche Genehmigung</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/100%20Mengen-%20und%20Kostenermittlung.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 100</span><h3 class="awf-title">Mengen- und Kostenermittlung</h3></div>
         <p class="awf-desc">Ermittlung strukturierter und bauteilbezogener Mengen anhand des Modells und Aufstellung der Kostenschätzungen und -berechnungen nach üblichen Kostengliederungen (DIN 276-4 etc.).</p>
         <span class="awf-tag">Kostenplanung &amp; Kalkulation</span>
       </div>
 
-      <div class="awf-card phase-planung" data-phase="planung">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/110%20Leistungsverzeichnis,%20Ausschreibung,%20Vergabe.aspx" onclick="window.location.href=this.dataset.link" phase-planung" data-phase="planung">
         <div class="awf-header"><span class="awf-num num-planung">AWF 110</span><h3 class="awf-title">Leistungsverzeichnis, Ausschreibung, Vergabe</h3></div>
         <p class="awf-desc">Modellgestütztes Erzeugen mengenbezogener Positionen des Leistungsverzeichnisses sowie modellbasierte Ausschreibung, Vergabe und Angebotsabgabe.</p>
         <span class="awf-tag">LV &amp; Vergabe</span>
@@ -362,49 +374,49 @@
     </div>
     <div class="awf-grid">
 
-      <div class="awf-card phase-bau" data-phase="bau">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/120%20Terminplanung%20der%20Ausf%C3%BChrung.aspx" onclick="window.location.href=this.dataset.link" phase-bau" data-phase="bau">
         <div class="awf-header"><span class="awf-num num-bau">AWF 120</span><h3 class="awf-title">Terminplanung der Ausführung</h3></div>
         <p class="awf-desc">Nutzung eines 4D-Modells durch Verknüpfung von Terminplanung und Modellelementen zur Darstellung und Überprüfung des geplanten Bauablaufs.</p>
         <span class="awf-tag">4D-Terminplanung</span>
       </div>
 
-      <div class="awf-card phase-bau" data-phase="bau">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/130%20Logistikplanung.aspx" onclick="window.location.href=this.dataset.link" phase-bau" data-phase="bau">
         <div class="awf-header"><span class="awf-num num-bau">AWF 130</span><h3 class="awf-title">Logistikplanung</h3></div>
         <p class="awf-desc">Unterstützung der Planung und Kommunikation von Logistikabläufen (Baustelleneinrichtung, Baustelleninfrastruktur, Verkehrsphasen) auf Basis von 4D-Modellen.</p>
         <span class="awf-tag">Baustellenlogistik</span>
       </div>
 
-      <div class="awf-card phase-bau" data-phase="bau">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/140%20Baufortschrittskontrolle.aspx" onclick="window.location.href=this.dataset.link" phase-bau" data-phase="bau">
         <div class="awf-header"><span class="awf-num num-bau">AWF 140</span><h3 class="awf-title">Baufortschrittskontrolle</h3></div>
         <p class="awf-desc">Nutzung des Modells für die terminliche Baufortschrittskontrolle als Grundlage des Projekt-Controllings.</p>
         <span class="awf-tag">Baucontrolling</span>
       </div>
 
-      <div class="awf-card phase-bau" data-phase="bau">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/150%20%C3%84nderungs-%20und%20Nachtragsmanagement.aspx" onclick="window.location.href=this.dataset.link" phase-bau" data-phase="bau">
         <div class="awf-header"><span class="awf-num num-bau">AWF 150</span><h3 class="awf-title">Änderungs- und Nachtragsmanagement</h3></div>
         <p class="awf-desc">Nutzung des Modells zur Dokumentation, Nachverfolgung und Freigabe von Planungsänderungen während der Bauausführung und zur Erfassung von Nachträgen.</p>
         <span class="awf-tag">Änderungsmanagement</span>
       </div>
 
-      <div class="awf-card phase-bau" data-phase="bau">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/160%20Abrechnung%20von%20Bauleistungen.aspx" onclick="window.location.href=this.dataset.link" phase-bau" data-phase="bau">
         <div class="awf-header"><span class="awf-num num-bau">AWF 160</span><h3 class="awf-title">Abrechnung von Bauleistungen</h3></div>
         <p class="awf-desc">Nutzung des Modells zur regelmäßigen Dokumentation und zur Plausibilisierung von Bauleistungen und Abschlagsrechnungen.</p>
         <span class="awf-tag">Abrechnungscontrolling</span>
       </div>
 
-      <div class="awf-card phase-bau" data-phase="bau">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/170%20Abnahme-%20und%20M%C3%A4ngelmanagement.aspx" onclick="window.location.href=this.dataset.link" phase-bau" data-phase="bau">
         <div class="awf-header"><span class="awf-num num-bau">AWF 170</span><h3 class="awf-title">Abnahme- und Mängelmanagement</h3></div>
         <p class="awf-desc">Nutzung des Modells zur Verortung und Dokumentation von Ausführungsmängeln, deren Nachverfolgung zur Behebung sowie zur Klärung offener Punkte.</p>
         <span class="awf-tag">Mängelerfassung</span>
       </div>
 
-      <div class="awf-card phase-bau" data-phase="bau">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/180%20Inbetriebnahmemanagement.aspx" onclick="window.location.href=this.dataset.link" phase-bau" data-phase="bau">
         <div class="awf-header"><span class="awf-num num-bau">AWF 180</span><h3 class="awf-title">Inbetriebnahmemanagement</h3></div>
         <p class="awf-desc">Digitale, modellbasierte Unterstützung des Inbetriebnahmemanagements von der Planungsphase bis zur Übergabe – mit Fokus auf TGA und Leit- &amp; Steuerungstechnik.</p>
         <span class="awf-tag">Inbetriebnahme &amp; Übergabe</span>
       </div>
 
-      <div class="awf-card phase-bau" data-phase="bau">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/190%20Projekt-%20und%20Bauwerksdokumentation.aspx" onclick="window.location.href=this.dataset.link" phase-bau" data-phase="bau">
         <div class="awf-header"><span class="awf-num num-bau">AWF 190</span><h3 class="awf-title">Projekt- und Bauwerksdokumentation</h3></div>
         <p class="awf-desc">Erstellung eines Wie-gebaut-Modells als „digitale Bauwerksakte" mit detaillierten Informationen zur Ausführung, verwendeten Materialien und Verweisen auf Prüfprotokolle.</p>
         <span class="awf-tag">As-Built-Dokumentation</span>
@@ -421,7 +433,7 @@
     </div>
     <div class="awf-grid">
 
-      <div class="awf-card phase-betrieb" data-phase="betrieb">
+      <div class="awf-card" data-link="https://zechglobal.sharepoint.com/sites/ROM-BIM/SitePages/200%20Nutzung%20f%C3%BCr%20Betrieb%20und%20Erhaltung.aspx" onclick="window.location.href=this.dataset.link" phase-betrieb" data-phase="betrieb">
         <div class="awf-header"><span class="awf-num num-betrieb">AWF 200</span><h3 class="awf-title">Nutzung für Betrieb und Erhaltung</h3></div>
         <p class="awf-desc">Übernahme von Daten aus dem Wie-gebaut-Modell in Systeme des Erhaltungsmanagements, Darstellung und Bewertung des Bauwerkszustandes sowie Aktualisierung bei Instandsetzungsmaßnahmen.</p>
         <span class="awf-tag">FM &amp; Lebenszyklusmanagement</span>
